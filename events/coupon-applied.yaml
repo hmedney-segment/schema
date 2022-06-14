@@ -1,0 +1,19 @@
+title: Coupon Applied
+description: Coupon was applied on a user’s shopping cart or order
+collection: Segment eCommerce Spec
+properties:
+  - name: cart_id
+    type: string
+    description: Cart ID associated with the product displayed
+  - name: coupon_id
+    type: string
+    description: ID of the coupon
+  - name: coupon_name
+    type: string
+    description: Name of the coupon
+  - name: discount
+    type: number
+    description: Total discount associated with the transaction
+  - name: order_id
+    type: string
+    description: Order/transaction ID

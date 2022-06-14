@@ -1,0 +1,16 @@
+title: Promotion Viewed
+description: User viewed promotion
+collection: Segment eCommerce Spec
+properties:
+  - name: promotion_creative
+    type: string
+    description: Description of promotion's creative
+  - name: promotion_id
+    type: string
+    description: ID of the promotion
+  - name: promotion_name
+    type: string
+    description: Name of the promotion
+  - name: promotion_position
+    type: string
+    description: Position of the promotion

@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: build-docs
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    container:
+      image: hmedney/segment-schema-tools:latest
+      credentials:
+        username: hmedney
+        password: ${{secrets.docker_hub_password}}
+      env:
+        DEPLOY_GITHUB_USER: ${{secrets.DEPLOY_GITHUB_USER}}
+        DEPLOY_GITHUB_TOKEN: ${{secrets.DEPLOY_GITHUB_TOKEN}}
+        DEPLOY_GITHUB_URL: ${{github.repositoryUrl}}
+    steps:
+      - name: Build and deploy
+        run: |
+          cd /usr/app
+          ./build-and-publish-docs.sh

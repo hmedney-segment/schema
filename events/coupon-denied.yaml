@@ -1,0 +1,19 @@
+title: Coupon Denied
+description: Coupon was denied from a user’s shopping cart or order
+collection: Segment eCommerce Spec
+properties:
+  - name: cart_id
+    type: string
+    description: Cart ID associated with the product displayed
+  - name: coupon_id
+    type: string
+    description: ID of the coupon
+  - name: coupon_name
+    type: string
+    description: Name of the coupon
+  - name: order_id
+    type: string
+    description: Order/transaction ID
+  - name: reason
+    type: string
+    description: Reason the coupon was denied

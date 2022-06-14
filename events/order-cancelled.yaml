@@ -1,0 +1,85 @@
+title: Order Cancelled
+description: User cancelled the order
+collection: Segment eCommerce Spec
+properties:
+  - name: affiliation
+    type: string
+    description: Store or affiliation from which this transaction occurred
+  - name: coupon
+    type: string
+    description: Coupon code associated with the product
+  - name: currency
+    type: string
+    description: Currency code associated with the transaction
+  - name: discount
+    type: number
+    description: Total discount associated with the transaction
+  - name: order_id
+    type: string
+    description: Order/transaction ID
+  - name: products
+    type: array
+    description: Products displayed in the product list
+    items:
+      type: object
+      properties:
+        product_id:
+          name: product_id
+          type: string
+          description: Product ID displayed in the list
+        sku:
+          name: sku
+          type: string
+          description: Product SKU displayed in the list
+        category:
+          name: category
+          type: string
+          description: Product Category displayed in the list
+        name:
+          name: name
+          type: string
+          description: Product Name displayed in the list
+        brand:
+          name: brand
+          type: string
+          description: Product Brand displayed in the list
+        variant:
+          name: variant
+          type: string
+          description: Product Variant displayed in the list
+        price:
+          name: price
+          type: number
+          description: Product Price displayed in the list
+        quantity:
+          name: quantity
+          type: integer
+          description: Product quantity displayed in the list
+        coupon:
+          name: coupon
+          type: string
+          description: Coupon code associated with the product
+        position:
+          name: position
+          type: number
+          description: Position of product in the list
+        url:
+          name: url
+          type: string
+          description: URL of the product page for product in the list
+        image_url:
+          name: image_url
+          type: string
+          description: Image url of the product in the list
+  - name: revenue
+    type: number
+    description: Revenue ($) associated with the transaction
+  - name: shipping
+    type: number
+    description: Shipping cost associated with the transaction
+  - name: tax
+    type: number
+    description: Total tax associated with the transaction
+  - name: total
+    type: number
+    description: Revenue with discounts and coupons added

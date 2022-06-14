@@ -1,0 +1,19 @@
+title: Payment Info Entered
+description: User added payment information
+collection: Segment eCommerce Spec
+properties:
+  - name: checkout_id
+    type: string
+    description: Checkout transaction ID
+  - name: order_id
+    type: string
+    description: Order/transaction ID
+  - name: payment_method
+    type: string
+    description: String representing the payment method chosen
+  - name: shipping_method
+    type: string
+    description: String representing the shipping method chosen
+  - name: step
+    type: integer
+    description: Number representing a step in the checkout process

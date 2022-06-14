@@ -1,0 +1,16 @@
+title: Product Reviewed
+description: User reviewed a product
+collection: Segment eCommerce Spec
+properties:
+  - name: product_id
+    type: string
+    description: Database ID of the product
+  - name: rating
+    type: integer
+    description: Star rating
+  - name: review_body
+    type: string
+    description: Content of the review
+  - name: review_id
+    type: string
+    description: ID of the review posted

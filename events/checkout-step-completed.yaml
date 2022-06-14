@@ -1,0 +1,16 @@
+title: Checkout Step Completed
+description: User completed a checkout step
+collection: Segment eCommerce Spec
+properties:
+  - name: checkout_id
+    type: string
+    description: Checkout transaction ID
+  - name: payment_method
+    type: string
+    description: String representing the payment method chosen
+  - name: shipping_method
+    type: string
+    description: String representing the shipping method chosen
+  - name: step
+    type: integer
+    description: Number representing a step in the checkout process

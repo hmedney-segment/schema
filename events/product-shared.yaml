@@ -1,0 +1,40 @@
+title: Product Shared
+description: Shared a product with one or more friends
+collection: Segment eCommerce Spec
+properties:
+  - name: brand
+    type: string
+    description: Brand of the product
+  - name: category
+    type: string
+    description: Product category being viewed
+  - name: image_url
+    type: string
+    description: Image url of the product
+  - name: name
+    type: string
+    description: Name of the product
+  - name: price
+    type: number
+    description: Price of the product
+  - name: product_id
+    type: string
+    description: Database ID of the product
+  - name: recipient
+    type: string
+    description: Recipient of the sharing
+  - name: share_message
+    type: string
+    description: Message that the sender sent
+  - name: share_via
+    type: string
+    description: Method of sharing
+  - name: sku
+    type: string
+    description: Sku of the product
+  - name: url
+    type: string
+    description: URL of the product page for product
+  - name: variant
+    type: string
+    description: Variant of the product
