@@ -3,6 +3,6 @@ description: User is removed from a group or account
 collection: Segment B2B SaaS Spec
 properties: []
 context:
-  - name: context.group_id
+  - name: group_id
     type: string
     description: The id of the account being created/updated/deleted

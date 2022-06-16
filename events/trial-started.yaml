@@ -12,6 +12,6 @@ properties:
     type: string
     description: Date when the trial starts (ISO-8601 date string)
 context:
-  - name: context.group_id
+  - name: group_id
     type: string
     description: The id of the account being created/updated/deleted
