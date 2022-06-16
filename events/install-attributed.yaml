@@ -1,0 +1,25 @@
+title: Install Attributed
+description: Segment or an integrated partner can discern the source of an install
+collection: Segment Mobile Spec
+properties:
+  - name: campaign[ad_creative]
+    type: string
+    description: Ad creative name
+  - name: campaign[ad_group]
+    type: string
+    description: Ad group name
+  - name: campaign[content]
+    type: string
+    description: Content of the campaign
+  - name: campaign[medium]
+    type: string
+    description: What type of link was used
+  - name: campaign[name]
+    type: string
+    description: Name of the attributed campaign
+  - name: campaign[source]
+    type: string
+    description: Campaign source -- attributed ad network
+  - name: provider
+    type: string
+    description: Attribution provider

@@ -1,0 +1,36 @@
+title: Video Ad Completed
+description: The ad content completes playing
+collection: Segment Video Spec
+properties:
+  - name: ad_asset_id
+    type: string
+    description: The unique ID of the ad asset.
+  - name: ad_load_type
+    type: string
+    description: Linear if ads are same for all users.
+  - name: ad_pod_id
+    type: string
+    description: The unique ID of the ad pod.
+  - name: ad_pod_position
+    type: integer
+    description: Position of the ad asset relative to other assets in the same pod.
+  - name: ad_position
+    type: integer
+    description: >-
+      The current index position in seconds of the playhead with respect to the
+      length of the ad.
+  - name: ad_publisher
+    type: string
+    description: The ad creator, author, producer, or publisher.
+  - name: ad_title
+    type: string
+    description: The title of the video ad.
+  - name: ad_type
+    type: string
+    description: The ad type
+  - name: session_id
+    type: string
+    description: The unique ID of the overall session.
+  - name: total_ad_length
+    type: integer
+    description: The total duration of the current ad asset in seconds.

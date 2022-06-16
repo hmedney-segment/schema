@@ -1,0 +1,48 @@
+title: Video Playback Interrupted
+description: >-
+  Playback stops unintentionally (ie. network loss, browser close/redirect, app
+  crash)
+collection: Segment Video Spec
+properties:
+  - name: ad_enabled
+    type: boolean
+    description: false if the user has any ad blockers
+  - name: bitrate
+    type: integer
+    description: The current kbps.
+  - name: content_asset_ids
+    type: array
+    description: Asset Ids of the 2+ videos playing/about to be played
+  - name: content_pod_ids
+    type: array
+    description: Pod Ids of the 2+ videos playing/about to be played
+  - name: framerate
+    type: integer
+    description: The average fps.
+  - name: full_screen
+    type: boolean
+    description: true if playback is in full screen mode
+  - name: livestream
+    type: boolean
+    description: True f the playback will be a livetream
+  - name: method
+    type: string
+    description: how the playback was interrupted
+  - name: position
+    type: integer
+    description: Position of product in the list
+  - name: quality
+    type: string
+    description: The quality of the video
+  - name: session_id
+    type: string
+    description: The unique ID of the overall session.
+  - name: sound
+    type: integer
+    description: The sound level of the playback
+  - name: total_length
+    type: integer
+    description: Total duration of the playback in seconds
+  - name: video_player
+    type: string
+    description: The name of the video player (ie ‘youtube’, ‘vimeo’).

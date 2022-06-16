@@ -1,0 +1,21 @@
+title: Push Notification Tapped
+description: >-
+  User taps push notification associated with your app Collected automatically
+  by iOS!
+collection: Segment Mobile Spec
+properties:
+  - name: action
+    type: string
+    description: 'Custom string if notification is “actionable“ Default: “Open”'
+  - name: push_campaign[content]
+    type: string
+    description: Content of the notification
+  - name: push_campaign[medium]
+    type: string
+    description: What type of link was pushed
+  - name: push_campaign[name]
+    type: string
+    description: Campaign name
+  - name: push_campaign[source]
+    type: string
+    description: Push provider

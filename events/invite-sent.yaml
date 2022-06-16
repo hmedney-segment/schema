@@ -1,0 +1,16 @@
+title: Invite Sent
+description: User invites another user
+collection: Segment B2B SaaS Spec
+properties:
+  - name: invitee_email
+    type: string
+    description: Email address of the person receiving the invite
+  - name: invitee_first_name
+    type: string
+    description: First name of the person receiving the invite
+  - name: invitee_last_name
+    type: string
+    description: Last name of the person receiving the invite
+  - name: invitee_role
+    type: string
+    description: Role of the invitee

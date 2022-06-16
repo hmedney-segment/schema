@@ -1,0 +1,17 @@
+title: Trial Started
+description: Trial is started
+collection: Segment B2B SaaS Spec
+properties:
+  - name: trial_end_date
+    type: string
+    description: Date when the trial ends (ISO-8601 date string)
+  - name: trial_plan_name
+    type: string
+    description: Name of the plan being trialed
+  - name: trial_start_date
+    type: string
+    description: Date when the trial starts (ISO-8601 date string)
+context:
+  - name: context.group_id
+    type: string
+    description: The id of the account being created/updated/deleted

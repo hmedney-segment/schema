@@ -1,0 +1,46 @@
+title: Video Playback Seek Started
+description: User manually seeks a certain position of content or ad in the playback
+collection: Segment Video Spec
+properties:
+  - name: ad_enabled
+    type: boolean
+    description: false if the user has any ad blockers
+  - name: bitrate
+    type: integer
+    description: The current kbps.
+  - name: content_asset_id
+    type: string
+    description: Asset Id of the video playing/about to be played
+  - name: content_pod_id
+    type: string
+    description: Pod Id of the video playing/about to be played
+  - name: framerate
+    type: integer
+    description: The average fps.
+  - name: full_screen
+    type: boolean
+    description: true if playback is in full screen mode
+  - name: livestream
+    type: boolean
+    description: True f the playback will be a livetream
+  - name: position
+    type: integer
+    description: Position of product in the list
+  - name: quality
+    type: string
+    description: The quality of the video
+  - name: seek_position
+    type: integer
+    description: Playhead position in seconds where the user is seeking to
+  - name: session_id
+    type: string
+    description: The unique ID of the overall session.
+  - name: sound
+    type: integer
+    description: The sound level of the playback
+  - name: total_length
+    type: integer
+    description: Total duration of the playback in seconds
+  - name: video_player
+    type: string
+    description: The name of the video player (ie ‘youtube’, ‘vimeo’).

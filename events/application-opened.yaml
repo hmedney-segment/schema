@@ -1,0 +1,26 @@
+title: Application Opened
+description: >-
+  User launches or foregrounds your mobile app after the first open Collected
+  Automatically!
+collection: Segment Mobile Spec
+properties:
+  - name: build
+    type: number
+    description: Build number of the installed app
+  - name: from_background
+    type: boolean
+    description: >-
+      If application transitioned from “Background” to “Inactive” state prior to
+      foregrounding (as opposed to from “Not Running” state). Automatically
+      collected on iOS only.
+  - name: referring_application
+    type: ''
+    description: ''
+  - name: url
+    type: string
+    description: >-
+      The value of UIApplicationLaunchOptionsURLKey from launchOptions
+      (auto-collected on iOS only)
+  - name: version
+    type: string
+    description: Version installed

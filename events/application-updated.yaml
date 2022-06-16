@@ -1,0 +1,16 @@
+title: Application Updated
+description: User updates the app Collected automatically!
+collection: Segment Mobile Spec
+properties:
+  - name: build
+    type: number
+    description: Build number of the installed app
+  - name: previous_build
+    type: number
+    description: Previously recorded build
+  - name: previous_version
+    type: string
+    description: Previously recorded version
+  - name: version
+    type: string
+    description: Version installed

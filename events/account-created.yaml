@@ -1,0 +1,11 @@
+title: Account Created
+description: New account is created
+collection: Segment B2B SaaS Spec
+properties:
+  - name: account_name
+    type: string
+    description: The name of the account being created
+context:
+  - name: context.group_id
+    type: string
+    description: The id of the account being created/updated/deleted

@@ -1,0 +1,63 @@
+title: Video Content Playing
+description: >-
+  Heartbeat every N (we recommend 10) seconds to track how far into the content
+  the user is currently viewing.
+collection: Segment Video Spec
+properties:
+  - name: airdate
+    type: string
+    description: ISO 8601 Date String for the original air date or published date.
+  - name: bitrate
+    type: integer
+    description: The current kbps.
+  - name: channel
+    type: string
+    description: The channel in which the video content is playing
+  - name: content_asset_id
+    type: string
+    description: Asset Id of the video playing/about to be played
+  - name: content_pod_id
+    type: string
+    description: Pod Id of the video playing/about to be played
+  - name: description
+    type: string
+    description: Short description of the video content.
+  - name: episode
+    type: string
+    description: The episode number if applicable.
+  - name: framerate
+    type: integer
+    description: The average fps.
+  - name: full_episode
+    type: boolean
+    description: true if content is a full episode and false otherwise.
+  - name: genre
+    type: string
+    description: The genre of the content, ie. ‘comedy’, ‘action’.
+  - name: keywords
+    type: array
+    description: Arbitrary keywords/tags that describe/categorize the content.
+  - name: livestream
+    type: boolean
+    description: True f the playback will be a livetream
+  - name: position
+    type: integer
+    description: Position of product in the list
+  - name: program
+    type: string
+    description: The name of the program, show, etc. of the content if applicable.
+  - name: publisher
+    type: string
+    description: The content creator, author, producer, or publisher.
+  - name: season
+    type: string
+    description: The season number if applicable.
+  - name: session_id
+    type: string
+    description: The unique ID of the overall session.
+  - name: title
+    type: string
+    description: User's salutation
+  - name: total_length
+    type: integer
+    description: Total duration of the playback in seconds

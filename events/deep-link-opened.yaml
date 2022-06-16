@@ -1,0 +1,10 @@
+title: Deep Link Opened
+description: User opens your app via a deep link
+collection: Segment Mobile Spec
+properties:
+  - name: deep_link_provider
+    type: string
+    description: The deep link provider
+  - name: deep_link_url
+    type: string
+    description: The deep link url clicked

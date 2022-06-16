@@ -1,0 +1,29 @@
+title: Signed Up
+description: User signs up for your service
+collection: Segment B2B SaaS Spec
+properties:
+  - name: email
+    type: string
+    description: User's email address
+  - name: first_name
+    type: string
+    description: User's first name
+  - name: last_name
+    type: string
+    description: User's last name
+  - name: phone
+    type: string
+    description: User's phone number
+  - name: signup_type
+    type: string
+    description: The type of signup (viral or organic)
+  - name: title
+    type: string
+    description: User's salutation
+  - name: username
+    type: string
+    description: The username of the user
+context:
+  - name: context.group_id
+    type: string
+    description: The id of the account being created/updated/deleted

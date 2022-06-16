@@ -1,0 +1,11 @@
+title: Signed Out
+description: User signs out for your service
+collection: Segment B2B SaaS Spec
+properties:
+  - name: username
+    type: string
+    description: The username of the user
+context:
+  - name: context.group_id
+    type: string
+    description: The id of the account being created/updated/deleted
