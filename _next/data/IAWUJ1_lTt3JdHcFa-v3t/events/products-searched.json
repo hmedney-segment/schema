@@ -1,0 +1,1 @@
+{"pageProps":{"event":{"title":"Products Searched","description":"User searched for products","collection":"Segment eCommerce Spec","properties":[{"name":"query","type":"string","description":"Query the user searched with"}],"_slug":"products-searched"}},"__N_SSG":true}
