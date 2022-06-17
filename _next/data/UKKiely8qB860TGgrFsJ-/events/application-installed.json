@@ -1,0 +1,1 @@
+{"pageProps":{"event":{"title":"Application Installed","description":"User first opens your mobile app. Collected automatically!","collection":"Segment Mobile Spec","properties":{"version":{"type":"string","description":"Version installed"},"build":{"type":"number","description":"Build number of the installed app"}},"_slug":"application-installed"}},"__N_SSG":true}

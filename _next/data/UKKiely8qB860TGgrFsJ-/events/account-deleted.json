@@ -1,0 +1,1 @@
+{"pageProps":{"event":{"title":"Account Deleted","description":"Account is deleted","collection":"Segment B2B SaaS Spec","properties":{"account_name":{"type":"string","description":"The name of the account being created"}},"context":{"group_id":{"type":"string","description":"The id of the account being created/updated/deleted"}},"_slug":"account-deleted"}},"__N_SSG":true}
