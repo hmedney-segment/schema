@@ -2,10 +2,10 @@ title: Account Added User
 description: User is added to a group or account
 collection: Segment B2B SaaS Spec
 properties:
-  - name: role
+  role:
     type: string
     description: Permission group for the user
 context:
-  - name: group_id
+  group_id:
     type: string
     description: The id of the account being created/updated/deleted

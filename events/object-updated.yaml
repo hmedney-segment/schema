@@ -2,6 +2,6 @@ title: Object updated
 description: User updated an object in a product
 collection: Product Usage
 properties:
-  - name: object
+  object:
     type: string
     description: Type of object updated
