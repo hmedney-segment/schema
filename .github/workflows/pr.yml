@@ -27,7 +27,8 @@ jobs:
         DEPLOY_GITHUB_USER: ${{secrets.DEPLOY_GITHUB_USER}}
         DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
-        GITHUB_REF: ${{github.ref}}
+        GITHUB_PR_FROM_REF: ${{github.head_ref}}
+        GITHUB_PR_TO_REF: ${{github.ref}}
     steps:
       - name: Build static docs site and deploy to GH Pages
         run: echo "# Changed - impact report here :rocket:" >> $GITHUB_STEP_SUMMARY
