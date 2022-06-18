@@ -23,7 +23,7 @@ jobs:
         DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
     steps:
-      - name: Build and deploy
+      - name: Build static docs site and deploy to GH Pages
         run: |
           cd /usr/app
           ./build-and-publish-docs.sh
@@ -44,7 +44,7 @@ jobs:
         SEGMENT_WORKSPACE: ${{secrets.SEGMENT_WORKSPACE}}
         SEGMENT_CONFIG_API_TOKEN: ${{secrets.SEGMENT_CONFIG_API_TOKEN}}
     steps:
-      - name: Build and deploy
+      - name: Build tracking plans and deploy to Segment
         run: |
           cd /usr/app
           ./build-and-deploy-tracking-plans.sh
