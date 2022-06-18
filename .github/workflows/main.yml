@@ -11,7 +11,7 @@ on:
 jobs:
   build-docs-site:
     runs-on: ubuntu-latest
-    container: &container
+    container:
       image: ghcr.io/${{github.repository_owner}}/schema-tools:latest
       credentials:
         username: ${{ github.repository_owner }}
@@ -30,7 +30,17 @@ jobs:
 
   build-tracking-plans:
     runs-on: ubuntu-latest
-    container: *container
+    container:
+      image: ghcr.io/${{github.repository_owner}}/schema-tools:latest
+      credentials:
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        DEPLOY_GITHUB_URL: ${{github.repositoryUrl}}
+        DEPLOY_GITHUB_TOKEN: ${{secrets.DEPLOY_GITHUB_TOKEN}}
+        DEPLOY_GITHUB_USER: ${{secrets.DEPLOY_GITHUB_USER}}
+        DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
+        DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
     steps:
       - name: Build and deploy
         run: |
