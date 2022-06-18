@@ -24,9 +24,7 @@ jobs:
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
     steps:
       - name: Build static docs site and deploy to GH Pages
-        run: |
-          cd /usr/app
-          ./build-and-publish-docs.sh
+        run: /usr/app/scripts/build-and-publish-docs.sh
 
   build-tracking-plans:
     runs-on: ubuntu-latest
@@ -45,6 +43,4 @@ jobs:
         SEGMENT_CONFIG_API_TOKEN: ${{secrets.SEGMENT_CONFIG_API_TOKEN}}
     steps:
       - name: Build tracking plans and deploy to Segment
-        run: |
-          cd /usr/app
-          ./build-and-deploy-tracking-plans.sh
+        run: /usr/app/scripts/build-and-deploy-tracking-plans.sh
