@@ -29,4 +29,4 @@ jobs:
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
     steps:
       - name: Build static docs site and deploy to GH Pages
-        run: echo "# Impact report here :rocket:" >> $GITHUB_STEP_SUMMARY
+        run: echo "# Changed - impact report here :rocket:" >> $GITHUB_STEP_SUMMARY
