@@ -3,7 +3,7 @@ on:
 - pull_request_target
 
 jobs:
-  triage:
+  add-triage-labels:
     permissions:
       contents: read
       pull-requests: write
@@ -12,3 +12,20 @@ jobs:
     - uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  create-impact-report:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/${{github.repository_owner}}/schema-tools:latest
+      credentials:
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        DEPLOY_GITHUB_URL: ${{github.repositoryUrl}}
+        DEPLOY_GITHUB_TOKEN: ${{secrets.DEPLOY_GITHUB_TOKEN}}
+        DEPLOY_GITHUB_USER: ${{secrets.DEPLOY_GITHUB_USER}}
+        DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
+        DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
+    steps:
+      - name: Build static docs site and deploy to GH Pages
+        run: echo "Impact report here"
