@@ -30,5 +30,9 @@ jobs:
         GITHUB_PR_FROM_REF: ${{github.head_ref}}
         GITHUB_PR_TO_REF: ${{github.ref}}
     steps:
-      - name: Build static docs site and deploy to GH Pages
-        run: echo "# Changed - impact report here :rocket:" >> $GITHUB_STEP_SUMMARY
+      - name: Generate impact report and output to job summary
+        run: |
+          IMPACT_REPORT=`/usr/app/scripts/create-impact-report.sh`
+          echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
+          echo $IMPACT_REPORT >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
