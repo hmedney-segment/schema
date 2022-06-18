@@ -1,0 +1,5 @@
+event-changed:
+  - events/*
+
+tracking-plan-changed:
+  - tracking-plans/*
