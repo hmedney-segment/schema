@@ -41,6 +41,8 @@ jobs:
         DEPLOY_GITHUB_USER: ${{secrets.DEPLOY_GITHUB_USER}}
         DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
+        SEGMENT_WORKSPACE: ${{secrets.SEGMENT_WORKSPACE}}
+        SEGMENT_CONFIG_API_TOKEN: ${{secrets.SEGMENT_CONFIG_API_TOKEN}}
     steps:
       - name: Build and deploy
         run: |
