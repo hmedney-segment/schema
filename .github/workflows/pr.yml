@@ -27,6 +27,7 @@ jobs:
           echo "GITHUB_SHA:$GITHUB_SHA"
           echo "GITHUB_REF:$GITHUB_REF"
           echo "GITHUB_HEAD_REF:$GITHUB_HEAD_REF"
+          echo "Default branch: ${{github.event.repository.default_branch}}"
       - name: Print complete webhook event payload
         run: cat $GITHUB_EVENT_PATH
         
@@ -44,7 +45,7 @@ jobs:
         DEPLOY_GITHUB_USER_NAME: ${{secrets.DEPLOY_GITHUB_USER_NAME}}
         DEPLOY_GITHUB_USER_EMAIL: ${{secrets.DEPLOY_GITHUB_USER_EMAIL}}
         GITHUB_PR_FROM_REF: ${{github.head_ref}}
-        GITHUB_PR_TO_REF: ${{github.ref}}
+        GITHUB_PR_TO_REF: ${{github.event.repository.default_branch}}
     steps:
       - name: Generate impact report and output to job summary
         run: |
