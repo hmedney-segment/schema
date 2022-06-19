@@ -1,4 +1,4 @@
-name: Process Schema Pull Request
+name: Schema checks
 on:
   pull_request:
     branches: ['main']
