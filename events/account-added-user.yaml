@@ -4,7 +4,7 @@ collection: Segment B2B SaaS Spec
 properties:
   role:
     type: string
-    description: Permission group for the user. Changed again. Changed from PR
+    description: Permission group for the user. Changed again.
 context:
   group_id:
     type: string
