@@ -5,6 +5,10 @@ properties:
   role:
     type: string
     description: Permission group for the user. Changed again.
+  new_prop:
+    type: string
+    required: true
+    description: Test prop
 context:
   group_id:
     type: string
