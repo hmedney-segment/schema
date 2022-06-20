@@ -8,7 +8,11 @@ properties:
   new_prop:
     type: string
     required: true
-    description: Test prop
+    description: Test prop - this is changed
+  another_new_prop:
+    type: string
+    required: true
+    description: Test property
 context:
   group_id:
     type: string
