@@ -1,0 +1,5 @@
+title: eCommerce
+description: Tracking plan for checkout service
+
+event_selectors:
+  - collection: Segment eCommerce Spec
