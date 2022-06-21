@@ -4,15 +4,15 @@ collection: Segment B2B SaaS Spec
 properties:
   role:
     type: string
-    required: true
     description: Permission group for the user. Changed again.
+  new_prop:
+    type: string
+    required: true
+    description: Test prop - this is changed
   another_new_prop:
     type: string
-    required: false
-    description: Test property
-  added_prop:
-    type: string
     required: true
+    description: Test property
 context:
   group_id:
     type: string
