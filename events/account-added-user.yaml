@@ -12,6 +12,7 @@ properties:
     description: Test property
   added_prop:
     type: string
+    required: true
 context:
   group_id:
     type: string
