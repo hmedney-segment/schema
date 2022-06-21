@@ -13,10 +13,6 @@ properties:
     type: string
     required: true
     description: Test property
-  another_new_prop_2:
-    type: string
-    required: true
-    description: Another test
 context:
   group_id:
     type: string
