@@ -4,7 +4,6 @@ collection: Segment B2B SaaS Spec
 properties:
   account_name:
     type: string
-    required: true
     description: The name of the account being created
 context:
   group_id:
