@@ -1,5 +1,5 @@
-title: Common
-description: Common tracking plan for most sources
+title: SaaS
+description: SaaS tracking plan (for most sources)
 
 event_selectors:
   - collection: Segment B2B SaaS Spec
