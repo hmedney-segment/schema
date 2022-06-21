@@ -8,19 +8,17 @@ This repository and supporting automation enables organizations to manage their 
 
 ### Events and Tracking Plans
 
-Event files define events. All possible events in the schema are defined in the [events](events) folder.
+Events in the schema are defined in the [events folder](events) in yaml.
 
-[Tracking Plans](tracking=plans) contain various subsets (or all) of the available events. This allows definition of targeted tracking plans for specific Segment sources from a common pool of events. Tracking Plans define their events using the `event_selector` key.
+[Tracking Plans](tracking=plans) files define Segment tracking plans and specify subsets (or all) of the available events in the [events folder](events). This allows definition of targeted tracking plans for specific Segment sources from a single pool of events. Tracking Plans define their events using the `event_selectors` key.
 
 ### YAML
 
-Events and tracking plans are expressed in yaml files which define both the specification and documentation for these entities. yaml was chosen for easy human editing.
+Events and tracking plans are expressed in yaml files which define both specifications and documentation for these entities. yaml was chosen for ease of human editing and more clear commit diffs in GitHub.
 
 ### Pull Requests
 
-If a change is needed to an event or tracking plan, it should be submitted in a Pull Request to the `main` branch.
-
-This will trigger the Pull Request GitHub Action.
+If a change is needed to an event or tracking plan, it should be submitted in a Pull Request to the `main` branch. This will trigger the Pull Request GitHub Action.
 
 ### GitHub Actions
 
