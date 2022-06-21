@@ -1,8 +1,8 @@
 # Segment events and tracking plans
 
-This repo contains [event](events) and [tracking plan](tracking-plan) specifications for Segment Protocols.
+This repo contains [event](events) and [tracking plan](tracking-plan) specifications for Segment Protocols. The files in the repo are "compiled" into a documentation site and into a set of tracking plans deployed to Segment.
 
-The files in the repo are "compiled" into a documentation site and into a set of tracking plans deployed to Segment.
+This repository and supporting automation enables organizations to manage their Segment schema as code.
 
 ## How does it work?
 
