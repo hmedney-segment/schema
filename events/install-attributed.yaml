@@ -5,21 +5,24 @@ properties:
   provider:
     type: string
     description: Attribution provider
-  campaign[source]:
-    type: string
-    description: Campaign source -- attributed ad network
-  campaign[name]:
-    type: string
-    description: Name of the attributed campaign
-  campaign[medium]:
-    type: string
-    description: What type of link was used
-  campaign[content]:
-    type: string
-    description: Content of the campaign
-  campaign[ad_creative]:
-    type: string
-    description: Ad creative name
-  campaign[ad_group]:
-    type: string
-    description: Ad group name
+  campaign:
+    type: object
+    properties:
+      source:
+        type: string
+        description: Campaign source -- attributed ad network
+      name:
+        type: string
+        description: Name of the attributed campaign
+      medium:
+        type: string
+        description: What type of link was used
+      content:
+        type: string
+        description: Content of the campaign
+      ad_creative:
+        type: string
+        description: Ad creative name
+      ad_group:
+        type: string
+        description: Ad group name
