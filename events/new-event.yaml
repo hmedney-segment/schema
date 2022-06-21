@@ -1,19 +1,14 @@
-title: Account Added User
+title: New Event
 description: User is added to a group or account
 collection: Segment B2B SaaS Spec
 properties:
-  role:
+  prop_a:
     type: string
     required: true
     description: Permission group for the user. Changed again.
-  another_new_prop:
+  prop_b:
     type: string
     required: false
     description: Test property
-  added_prop:
+  prop_c:
     type: string
-    required: true
-context:
-  group_id:
-    type: string
-    description: The id of the account being created/updated/deleted.
