@@ -34,6 +34,6 @@ jobs:
     steps:
       - name: Generate impact report and output to job summary
         run: |
-          echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
+          # echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
           /usr/app/scripts/create-impact-report.sh >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          # echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
