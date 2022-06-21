@@ -3,7 +3,7 @@ description: Shared the cart with one or more friends
 collection: Segment eCommerce Spec
 properties:
   share_via:
-    type: string
+    type: number
     description: Method of sharing
   share_message:
     type: string
