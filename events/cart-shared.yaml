@@ -3,7 +3,7 @@ description: Shared the cart with one or more friends
 collection: Segment eCommerce Spec
 properties:
   share_via:
-    type: number
+    type: string
     description: Method of sharing
   share_message:
     type: string
@@ -13,7 +13,6 @@ properties:
     description: Recipient of the sharing
   cart_id:
     type: string
-    required: true
     description: Cart ID associated with the product displayed
   products:
     type: array
