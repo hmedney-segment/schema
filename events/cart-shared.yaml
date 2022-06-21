@@ -13,6 +13,7 @@ properties:
     description: Recipient of the sharing
   cart_id:
     type: string
+    required: true
     description: Cart ID associated with the product displayed
   products:
     type: array
