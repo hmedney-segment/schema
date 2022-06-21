@@ -5,7 +5,6 @@ properties:
   session_id:
     type: string
     description: The unique ID of the overall session.
-    required: true
   ad_asset_id:
     type: string
     description: The unique ID of the ad asset.
