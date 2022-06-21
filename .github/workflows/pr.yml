@@ -5,7 +5,7 @@ on:
 
 jobs:
   add-labels:
-    name: Add labels
+    name: Add triage labels
     permissions:
       contents: read
       pull-requests: write
@@ -33,7 +33,4 @@ jobs:
         GITHUB_PR_TO_REF: ${{github.event.repository.default_branch}}
     steps:
       - name: Generate impact report and output to job summary
-        run: |
-          # echo "\`\`\`json" >> $GITHUB_STEP_SUMMARY
-          /usr/app/scripts/create-impact-report.sh >> $GITHUB_STEP_SUMMARY
-          # echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+        run: /usr/app/scripts/create-impact-report.sh >> $GITHUB_STEP_SUMMARY
