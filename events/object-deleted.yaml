@@ -1,6 +1,6 @@
 title: Object deleted
 description: User deleted an object in a product
-collection: Product Usage
+collection: Generic
 properties:
   object:
     type: string

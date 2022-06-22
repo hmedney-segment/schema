@@ -1,6 +1,6 @@
 title: Object updated
 description: User updated an object in a product
-collection: Product Usage
+collection: Generic
 properties:
   object:
     type: string

@@ -1,6 +1,6 @@
 title: Object created
 description: User created an object in a product
-collection: Product Usage
+collection: Generic
 properties:
   object:
     type: string
