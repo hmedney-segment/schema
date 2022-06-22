@@ -1,5 +1,5 @@
 title: Checkout Started
-description: User initiated the order process (a transaction is created). Changed
+description: User initiated the order process (a transaction is created)
 collection: Segment eCommerce Spec
 example: |
   analytics.track('Checkout Started', {
@@ -36,7 +36,6 @@ example: |
 properties:
   order_id:
     type: string
-    required: true
     description: Order/transaction ID
   affiliation:
     type: string
@@ -47,6 +46,12 @@ properties:
   revenue:
     type: number
     description: Revenue ($) associated with the transaction
+  shipping:
+    type: number
+    description: Shipping cost associated with the transaction
+  tax:
+    type: number
+    description: Total tax associated with the transaction
   discount:
     type: number
     description: Total discount associated with the transaction
